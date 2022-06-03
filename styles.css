@@ -1,0 +1,176 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  background-color: #f7cd75;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 100px auto 0;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.left-side {
+  min-width: 300px;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: #f2f2f2;
+  padding: 35px 20px 35px 35px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 400;
+}
+.plus-icon {
+  width: 20px;
+}
+
+.card {
+  padding: 5px 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card-icon {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.card-number {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #767474;
+}
+
+.valid-date {
+  font-size: 14px;
+  font-weight: 500;
+  color: #767474;
+}
+
+.card.active,
+.card:hover {
+  outline: 2px solid #8793c6;
+}
+
+/* ---------------------------- right side styles --------------------------- */
+
+.right-side {
+  width: 100%;
+  padding: 35px;
+  overflow-y: scroll;
+}
+
+.right-side header {
+  margin-bottom: 30px;
+}
+
+.total-money {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+hr {
+  outline: none;
+  border: none;
+  height: 1px;
+  width: 100%;
+  background-color: #dedede;
+}
+
+.item-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 35px 0;
+}
+.item-box:last-child {
+  margin-bottom: 0;
+}
+
+.item-box__name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item-box__icon {
+  border: 1px solid #dedede;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.item-icon {
+  width: 22px;
+  height: 22px;
+  padding: 3px;
+}
+
+.product-name {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.product-description {
+  color: #b5b5b5;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.product-price h1 {
+  font-size: 16px;
+  color: #8797c6;
+}
+
+.product-price.added h1 {
+  color: #8ace5e;
+}
+
+/* ------------------------------ scroll effect ----------------------------- */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
